@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -32,5 +33,6 @@ public class ListGroup {
                         (e1, e2) -> e2, LinkedHashMap::new));
 
         System.out.println(wordCount);
+        System.out.println(wordCount.keySet().stream().limit(5).collect(Collectors.toList()));
     }
 }
