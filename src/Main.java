@@ -41,10 +41,7 @@ class MyClass {
 
 public class Main {
 
-
-
-
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 //        List<Integer> list = new ArrayList<>();
 //        list.add(2);
 //        list.add(8);
