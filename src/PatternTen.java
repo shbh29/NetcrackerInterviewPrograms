@@ -21,13 +21,13 @@ public class PatternTen {
         int to = 7;
         IntStream.rangeClosed(from, to)
                 .forEach(i -> printSpaceAndNumbers(i, to));
-        IntStream.rangeClosed(from + 1, to)
-                .map(i -> to - i + 1)
+        IntStream.rangeClosed(from + 1, to) // 2, 7
+                .map(i -> to - i + 1) //
                 .forEach(i -> printSpaceAndNumbers(i, to));
     }
     static void printSpaceAndNumbers(int separateOn, int till) {
         //print space
-        IntStream.rangeClosed(1, separateOn)
+        IntStream.range(1, separateOn)
                 .forEach(j -> System.out.print(" "));
         // print numbers
         IntStream.rangeClosed(separateOn, till)
