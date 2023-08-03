@@ -23,7 +23,7 @@ public class Isomorphic {
             } else {
                 charMapping.put(c1, c2);
             }
-        });
+        }
 
         return true;
     }
